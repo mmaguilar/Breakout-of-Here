@@ -1,0 +1,56 @@
+{
+    "name": "Breakout",
+    "maps": [
+        {
+            "name": "Breakout",
+            "id": "366053dd-a595-4d36-9f9c-93bbd5731cb8",
+            "actions": [
+                {
+                    "name": "MovePaddle",
+                    "type": "Value",
+                    "id": "61efc448-5043-4dc2-8faa-2a7bebd36f16",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "LeftRight",
+                    "id": "c0ad9f07-c78e-4b73-8b67-386f4ce0d2a0",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovePaddle",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "7a367148-29f4-4c85-8a6d-5c97a2b9dc94",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovePaddle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "ebbc1a7d-d220-45e2-9425-0a4b29632c46",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovePaddle",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
